@@ -1,9 +1,9 @@
-P2.Foobaloo = function(x,y) {
+P3.Foobaloo = function(x,y) {
   this.x = x;
   this.y = y;
 };
 
-P2.Foobaloo.prototype = {
+P3.Foobaloo.prototype = {
   getSum: function() {
     return this.x + this.y;
   },

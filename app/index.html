@@ -5,7 +5,15 @@
     <title>Test buildchain</title>
     <meta name="description" content="Testing the build chain">
     <meta name="viewport" content="width=device-width">
-    <script src="P2.min.js"></script>
+    <!-- @if NODE_ENV == "DEVELOPMENT" -->
+    <script src="libs/jquery-2.1.1.js"></script>
+    <script src="one.js"></script>
+    <script src="two.js"></script>
+    <script src="three.js"></script>
+    <!-- @endif -->
+    <!-- @if NODE_ENV == "PRODUCTION" -->
+    <script src="P3.min.js"></script>
+    <!-- @endif -->
 
 
   </head>
@@ -16,7 +24,7 @@
 
 
     <div id="mydiv">
-      <p>Hi</p>
+      <p>Hi world! again</p>
     </div>
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -28,7 +36,7 @@
     </script>
 
     <script>
-      P2.app.init();
+      P3.app.init();
     </script>
 
 </body>

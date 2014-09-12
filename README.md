@@ -1,4 +1,4 @@
-npm updatep2
+P3
 ==
 
 Playing with pusher (take 2)
@@ -9,6 +9,10 @@ npm install grunt-contrib-jshint --save-dev
 npm install grunt-contrib-concat --save-dev
 npm install grunt-contrib-copy --save-dev
 npm install grunt-contrib-clean --save-dev
+npm install grunt-contrib-watch --save-dev
+npm install --save-dev load-grunt-tasks
+grunt-preprocess
+grunt-env
 
 With node/npm installed, you don't need to checkin "node_modules".  On a new system, just type "npm update" and they will be recreated.
 
